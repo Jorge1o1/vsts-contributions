@@ -1,3 +1,6 @@
+### Credits ###
+The vast majority of the work in this project was done by [Otto Streifel](https://github.com/ostreifel/vsts-contributions)
+
 ### Structure ###
 
 ```

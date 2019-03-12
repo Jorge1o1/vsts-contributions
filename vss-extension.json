@@ -1,15 +1,16 @@
 {
     "manifestVersion": 1,
     "id": "contributions",
-    "version": "2.1.18",
+    "version": "2.1.21",
     "name": "Contributions Graph",
+    "public": false,
     "scopes": [
         "vso.work",
         "vso.work_write",
         "vso.code"
     ],
     "description": "View account contributions by user.",
-    "publisher": "ottostreifel",
+    "publisher": "JorgeLMartinezJr",
     "icons": {
         "default": "img/logo.png"
     },
@@ -38,7 +39,7 @@
     },
     "repository": {
         "type": "git",
-        "uri": "https://github.com/ostreifel/vsts-contributions"
+        "uri": "https://github.com/Jorge1o1/vsts-contributions"
     },
     "branding": {
         "color": "rgb(220, 235, 252)",
@@ -55,7 +56,7 @@
         }
     ],
     "categories": [
-        "Collaborate"
+        "Azure Repos"
     ],
     "contributions": [
         {
