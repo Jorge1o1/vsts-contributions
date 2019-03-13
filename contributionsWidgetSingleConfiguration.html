@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>          
+        <script inline src="dist/VSS.SDK.min.js"></script>              
+    </head>
+    <body>
+        <div class="container">
+        </div>
+        <script type="text/javascript">
+            // Initialize framework 
+            VSS.init({
+                explicitNotifyLoaded: true,
+                usePlatformScripts: true,
+                configureModuleLoader: true,
+                applyTheme: true,
+            });
+
+            VSS.ready(function () {
+                require(["dist/contributionsWidgetSingleConfiguration"], function (configuration) { });
+            });
+        </script>
+    </body>
+</html>

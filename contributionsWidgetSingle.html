@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>          
+        <script inline src="dist/VSS.SDK.min.js"></script>
+        <link inline href="dist/contributions.css" rel="stylesheet" />              
+    </head>
+    <body>
+        <div class="widget">
+            <div class="graphs-container"></div>
+        </div>
+        <script type="text/javascript">
+            // Initialize framework 
+            VSS.init({
+                explicitNotifyLoaded: true,
+                usePlatformScripts: true,
+                configureModuleLoader: true,
+                applyTheme: true,
+            });
+
+            VSS.ready(function () {
+                require(["dist/contributionsWidgetSingle"], function (main) { });
+            });
+        </script>
+    </body>
+</html>

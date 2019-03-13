@@ -5,6 +5,8 @@ const { BundleAnalyzerPlugin } = require("webpack-bundle-analyzer");
 module.exports = {
     entry: {
         contributionsHub: "./scripts/contributionsHub.tsx",
+        contributionsWidgetSingle: "./scripts/contributionsWidgetSingle.tsx",
+        contributionsWidgetSingleConfiguration: "./scripts/contributionsWidgetSingleConfiguration.tsx"
     },
     output: {
         libraryTarget: "amd",

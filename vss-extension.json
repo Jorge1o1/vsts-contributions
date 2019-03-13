@@ -1,7 +1,7 @@
 {
     "manifestVersion": 1,
     "id": "contributions",
-    "version": "2.1.21",
+    "version": "2.1.39",
     "name": "Contributions Graph",
     "public": false,
     "scopes": [
@@ -56,7 +56,7 @@
         }
     ],
     "categories": [
-        "Azure Repos"
+        "Azure Boards"
     ],
     "contributions": [
         {
@@ -72,6 +72,42 @@
                 "uri": "dist/contributionsHub.html",
                 "icon": "asset://img/logo.png"
             }
+        },
+        {
+            "id": "contributions-widget-single",
+            "type": "ms.vss-dashboards-web.widget",
+            "targets": [
+                "ms.vss-dashboards-web.widget-catalog",
+                ".contributions-widget-single-configuration"
+            ],
+            "properties": {
+                "name":"Contributions Graph - Single User",
+                "description":"View code and work item contributions for a single user.",
+                "previewImageUrl":"img/logo.png",
+                "uri":"dist/contributionsWidgetSingle.html",
+                "supportedSizes": [
+                   {
+                       "rowSpan" : 3,
+                       "columnSpan": 6
+                   }
+                ],
+                "supportedScopes": [
+                    "project_team"       
+                  ]
+            }
+        },
+        {
+
+            "id": "contributions-widget-single-configuration",
+            "type": "ms.vss-dashboards-web.widget-configuration",   
+            "targets": [      
+              "ms.vss-dashboards-web.widget-configuration"      
+            ],  
+            "properties": {  
+              "name": "Contributions Graph - Single User - Configuration",  
+              "description": "Configure Single User Contributions Graph",  
+              "uri": "dist/contributionsWidgetSingleConfiguration.html"    
+            }     
         }
     ]
 }
